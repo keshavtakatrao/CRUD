@@ -1,24 +1,54 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
+import React from 'react';
+import Sidebar from './sidebar';
+import Topbar from './topbar';
+import Dashboard from './dashboard'
+import User from './user';
+import Create from "./create";
+import { UserProvider } from './usercontext';
+import EditUser from './edit-user'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <div id="wrapper">
+          <Sidebar></Sidebar>
+
+          <div id="content-wrapper" class="d-flex flex-column">
+            <div id='content'>
+              <Topbar></Topbar>
+              <div class='container-fluid'>
+                <UserProvider>
+                  <Switch>
+                    <Route path='/dashboard' exact={true}>
+                      <Dashboard></Dashboard>
+                    </Route>
+
+                    <Route path='/user' exact={true}>
+                      <User></User>
+                    </Route>
+
+                    <Route path='/create' exact={true}>
+                      <Create></Create>
+                    </Route>
+                    <Route path='/edit-user/:id' exact={true} component={EditUser} />
+
+                  </Switch>
+                </UserProvider>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Router>
+
+    </>
   );
 }
 
