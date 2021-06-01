@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pollmaker-react/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/pollmaker-react/static/js/main.9345f782.chunk.js",
+    "main.js.map": "/pollmaker-react/static/js/main.9345f782.chunk.js.map",
+    "runtime-main.js": "/pollmaker-react/static/js/runtime-main.3e252981.js",
+    "runtime-main.js.map": "/pollmaker-react/static/js/runtime-main.3e252981.js.map",
+    "static/js/2.c6176e43.chunk.js": "/pollmaker-react/static/js/2.c6176e43.chunk.js",
+    "static/js/2.c6176e43.chunk.js.map": "/pollmaker-react/static/js/2.c6176e43.chunk.js.map",
+    "static/js/3.8720c640.chunk.js": "/pollmaker-react/static/js/3.8720c640.chunk.js",
+    "static/js/3.8720c640.chunk.js.map": "/pollmaker-react/static/js/3.8720c640.chunk.js.map",
+    "index.html": "/pollmaker-react/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/pollmaker-react/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.c6176e43.chunk.js.LICENSE.txt": "/pollmaker-react/static/js/2.c6176e43.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3e252981.js",
+    "static/js/2.c6176e43.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.9345f782.chunk.js"
+  ]
+}
